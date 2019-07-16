@@ -38,7 +38,7 @@ removed
 ## Installing the tutorials
 
 ```
-git clone https://github.com/nasa/openmct-tutorial.git
+git clone https://github.com/ferm12/openmct-exercise-pureco.git
 cd openmct-tutorial
 npm install
 npm start
