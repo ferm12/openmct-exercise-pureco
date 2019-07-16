@@ -44,3 +44,4 @@ npm install
 npm start
 ```
 Once the server is running navigate to http://localhost:8080/table/ to display the table.
+The table html, js, and css are in the table folder. 
