@@ -1,0 +1,39 @@
+table {
+    width:100%;
+}
+tr{
+    text-align:left;
+}
+th,td{
+    width:calc(100%/3);
+}
+
+#subscription{
+    display:none;
+}
+/* customers table start*/
+.table-header{
+    background-color:#d8e9ff;
+    font-weight:bold;
+}
+.table-values:nth-of-type(even){
+    background-color:#dadada;
+}
+.table-wrapper{
+    display:grid;
+    grid-template-columns:calc(100%/3) calc(100%/3) calc(100%/3);
+    grid-template-rows:auto;
+    grid-template-areas:"id timestamp value";
+    line-height:30px;
+}
+.id{
+    grid-area:id;
+}
+.timestamp{
+    grid-area:timestamp;
+    /* word-break:break-all; */
+}
+.value{
+    grid-area:value;
+    /* word-break:break-all; */
+}

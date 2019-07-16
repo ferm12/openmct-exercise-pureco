@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open MCT Tutorials</title>
+    <script src="../lib/http.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+
+     <select id="select-typeof-request">
+        <option selected="selected" value="">Select the type of request</option>
+        <option value="historical">last 15 mins</option>
+        <option value="realtime">real time</option>
+    </select>
+
+    <select id="select-telemetry">
+        <option selected="selected" value="">Select a telemetry point</option>
+        <option value="pwr.v">pwr.v</option>
+        <option value="pwr.c">pwr.c</option>
+    </select>
+
+    <select id="subscription">
+        <option selected="selected" value="">Select a subscription</option>
+        <option value="subscribe">subscribe</option>
+        <option value="unsubscribe">unsubscribe</option>
+    </select>
+
+
+    <select id="select-timestamp-order">
+        <option selected="selected" value="">Select Timestamp order</option>
+        <option value="ascending">ascending</option>
+        <option value="descending">descending</option>
+    </select>
+
+    <h1>Telemetry table for either or both"pwr.v" and "pwr.c" telemetry points</h1>
+
+
+     <div class="table-wrapper table-header">
+         <div class="id">ID</div>
+         <div class="timestamp">Timestamp</div>
+         <div class="value">Value</div>
+     </div>
+    <div id="table-data"></div>
+
+<script type="text/javascript" src="./js/table.js"></script>
+</body>
+</html>
