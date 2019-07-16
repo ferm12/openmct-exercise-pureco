@@ -35,7 +35,7 @@ removed
     * Windows: https://git-scm.com/downloads
     * linux: https://git-scm.com/downloads
 
-## Installing the tutorials
+## Installing the Exercise
 
 ```
 git clone https://github.com/ferm12/openmct-exercise-pureco.git
