@@ -39,7 +39,7 @@ removed
 
 ```
 git clone https://github.com/ferm12/openmct-exercise-pureco.git
-cd openmct-tutorial
+cd openmct-exercise-pureco
 npm install
 npm start
 ```
