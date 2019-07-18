@@ -61,7 +61,7 @@ var clearTable = function(){
 };
 
 var telemetryData = function(data){
-    let tableVals = function(el){
+    let tableVals = function(el, arrayObject){
         let div = document.createElement('div');
         div.className ="table-wrapper table-values";
         div.innerHTML = `
@@ -69,14 +69,19 @@ var telemetryData = function(data){
             <div class="timestamp">${el.timestamp}</div>
             <div class="value">${el.value}</div>
         `;
-        tableNode.appendChild(div);
-    }
+        if (typeOfRequest == "realtime" && timestampOrder== "descending" && arrayObject == "object"){
+            let tableDataNode = document.querySelector("#table-data");
+            tableNode.insertBefore(div, tableDataNode.childNodes[0]);
+        }else{
+            tableNode.appendChild(div);
+        }
+    };
     if (Array.isArray(data)){
         data.forEach(function(el){
-            tableVals(el);
+            tableVals(el, "array");
         });
     }else if (typeof data == "object"){
-        tableVals(data);
+        tableVals(data, "object");
     }
 };
 // sorting
