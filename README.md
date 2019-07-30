@@ -1,8 +1,8 @@
-# Open MCT Coding Exercise
+# Open MCT
 
-This is my solution to the Open MCT Coding exercise. 
+Open MCT.
 
-On this exercise I wrote a single page JavaScript web application that:
+On this Single Page App (SAP) I wrote a web application that:
 1. Queries the given telemetry server for the last 15 minutes of historical telemetry data for
 either or both of the “pwr.v” and “pwr.c” telemetry points. The telemetry are 
 selectable by the user. Changing the selected telemetry points results in only data
@@ -35,7 +35,7 @@ removed
     * Windows: https://git-scm.com/downloads
     * linux: https://git-scm.com/downloads
 
-## Installing the Exercise
+## Installing
 
 ```
 git clone https://github.com/ferm12/openmct-exercise-pureco.git
